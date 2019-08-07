@@ -6,7 +6,7 @@ print(data)
 
 DataAccess.writeData(data)
 
-data = "poop"
+data = "this is bad"
 
 data = DataAccess.readData()
 

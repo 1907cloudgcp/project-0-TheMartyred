@@ -1,4 +1,7 @@
-def readData(filePath="main/resources/BankingInfo"):
+#import sys
+#sys.path.append("../../../")
+
+def readData(filePath="../../../resources/BankingInfo"):
     #create an empty data object to store the data we pull from the file
     data = []
     #open the file at the default or provided path
@@ -42,7 +45,7 @@ def readData(filePath="main/resources/BankingInfo"):
 ##            print(data)
     return data
 
-def writeData(data, filePath="/main/resources/BankingInfo"):
+def writeData(data, filePath="../../../resources/BankingInfo"):
     #instantiate a string to add to
     textData = ""
     #iterate through users and construct a string to save to file
