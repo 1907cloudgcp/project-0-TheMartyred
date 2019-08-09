@@ -7,3 +7,8 @@ class UserNotFoundError(Exception):
     """raised if a user is searched for in the
 data and not found"""
     pass
+
+class InvalidMoneyError(Exception):
+    """raised if a user attempts to deposit
+or withdraw a negative or otherwise invalid amount"""
+    pass
