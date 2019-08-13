@@ -29,11 +29,15 @@ def main():
                         username = input()
                         print("Enter a password:")
                         password = input()
-                        #loop until successful
-                        while not BC.createUser(username, password) and username != "quit":
-                                #if the creation failed, ask for a different username
-                                print(username+" is already taken. Try something else:")
-                                username = input()
+                        try:
+                                #loop until successful
+                                while not BC.createUser(username, password) and username != "quit":
+                                        #if the creation failed, ask for a different username
+                                        print(username+" is already taken or contains reserved characters.\nTry something else:")
+                                        username = input()
+                        except errors.InvalidPasswordError as error:
+                                print("The password entered contains reserved characters.\nPlease try again and enter a password \nthat does not contain one of the following: ';:,'")
+                                username = "quit"
                         if username == "quit":
                                 #if the user quit the creation without finishing, ensure that username goes back to empty
                                 username = ""
@@ -54,6 +58,8 @@ def main():
                                 BC.withdraw(username, amount)
                         except errors.InvalidMoneyError as error:
                                 print("Sorry. The amount you entered was invalid.")
+                        except errors.NegativeBalanceError as error:
+                                print("Error: This transaction would set user balance below 0!")
                 elif selection == "6" and username:
                         print("Enter an amount:")
                         amount = input()

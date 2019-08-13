@@ -1,0 +1,12 @@
+INFO:logging:Program started
+INFO:logging:Program started
+WARNING:logging:Detected failed log in attempt for username, blake!
+WARNING:logging:Detected failed log in attempt for username, blake!
+INFO:logging:Program started
+WARNING:logging:Detected failed log in attempt for username, Blake!
+WARNING:logging:Detected failed log in attempt for username, blake!
+INFO:logging:Program started
+ERROR:logging:The username, 'blake' entered was found in the existing list of users and is therefore invalid
+INFO:logging:User, quit successfully added
+WARNING:logging:Detected failed log in attempt for username, blake!
+INFO:logging:User, 0 successfully added

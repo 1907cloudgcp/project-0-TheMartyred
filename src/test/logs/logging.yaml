@@ -28,4 +28,4 @@ handlers:
 root:
     #Change this value only to change your whole application top logging LEVEL
     level: DEBUG
-    handlers: [console, all, errors]
+    handlers: [console, all, errors]INFO:logging:Program started

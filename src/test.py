@@ -9,7 +9,6 @@ This is your main testing script, this should call several other testing scripts
 '''
 def main():
 	ReadWrite.main()
-	testBankingController.main()
 
 if __name__ == '__main__':
 	main()
