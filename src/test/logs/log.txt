@@ -10,3 +10,16 @@ ERROR:logging:The username, 'blake' entered was found in the existing list of us
 INFO:logging:User, quit successfully added
 WARNING:logging:Detected failed log in attempt for username, blake!
 INFO:logging:User, 0 successfully added
+INFO:logging:Program started
+INFO:logging:User, Blake successfully added
+ERROR:logging:The username, 'Blake' entered was found in the existing list of users and is therefore invalid
+ERROR:logging:Username: 'ty;er' is not alphanumeric and is therefore invalid
+INFO:logging:User, jimmy successfully added
+INFO:logging:User, Blake has successfully logged in.
+INFO:logging:User, Blake showing balance of $0.0
+ERROR:logging:withdrawing $7.0 from Blake would result in a balance of -7.0! Transaction cancelled.
+INFO:logging:User, Blake deposited $700.0
+INFO:logging:User, Blake viewing transactions.
+INFO:logging:Amount withdrawn from Blake: 500.0
+INFO:logging:User, Blake viewing transactions.
+INFO:logging:User, Blake showing balance of $200.0

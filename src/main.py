@@ -50,7 +50,7 @@ def main():
                         #logout by just setting username back to empty
                         username = ""
                 elif selection == "4" and username:
-                        print("Your Balance: "+str(BC.getBalance(username)))
+                        print("Your Balance: $"+str(BC.getBalance(username)))
                 elif selection == "5" and username:
                         print("Enter an amount:")
                         amount = input()
